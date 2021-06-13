@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/pic0"
+        android:layout_width="305dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="84dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/billgates" />
+
+    <ImageView
+        android:id="@+id/pic1"
+        android:layout_width="305dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="84dp"
+        android:alpha="0"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mark" />
+
+    <ImageView
+        android:id="@+id/pic2"
+        android:layout_width="305dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="84dp"
+        android:alpha="0"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/msd" />
+
+    <ImageView
+        android:id="@+id/pic3"
+        android:layout_width="305dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="84dp"
+        android:alpha="0"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mrbeast" />
+
+    <ImageView
+        android:id="@+id/pic4"
+        android:layout_width="305dp"
+        android:layout_height="251dp"
+        android:layout_marginTop="84dp"
+        android:alpha="0"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/elon" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="271dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="84dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.639"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pic0">
+
+        <ImageButton
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="prev"
+            app:srcCompat="@drawable/icon_prev" />
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:onClick="next"
+            app:srcCompat="@drawable/icon_next" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nameOfGuys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Bill Gates"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
